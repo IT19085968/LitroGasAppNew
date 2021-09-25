@@ -23,14 +23,14 @@ public class MainActivity extends AppCompatActivity {
         etPassword = findViewById(R.id.etPassword);
 
         DBHelper dbHelper = new DBHelper(this);
-        long val = dbHelper.addInfo("admin@gmail.com","admin123");
+        long val = dbHelper.addInfo("admin123@gmail.com","admin12");
 
     }
 
     public void signIn(View view){
         DBHelper dbHelper = new DBHelper(this);
 
-        Intent intent = new Intent(this,AddAddress.class);
+        Intent intent = new Intent(this,Signup.class);
         Intent intent2 = new Intent(this,MainActivity.class);
 
         List emails = dbHelper.readAllInfo("email");
@@ -49,5 +49,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent2);
             }
         }
+    }
+
+    public void sendMessage(View view) {
+        Intent intent = new Intent(this, Signup.class);
+        startActivity(intent);
+
     }
 }

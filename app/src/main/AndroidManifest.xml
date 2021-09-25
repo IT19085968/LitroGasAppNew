@@ -9,20 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Dashboard" android:parentActivityName=".AddAddress">
+        <activity android:name=".Signup"></activity>
+        <activity
+            android:name=".Dashboard"
+            android:parentActivityName=".AddAddress">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".AddAddress" />
         </activity>
-        <activity android:name=".AddAddress" android:parentActivityName=".MainActivity">
+        <activity
+            android:name=".AddAddress"
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
-        </activity>
-
-<!--        <meta-data-->
-<!--            android:name="com.google.android.actions" />-->
-
+        </activity> <!-- <meta-data -->
+        <!-- android:name="com.google.android.actions" /> -->
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
