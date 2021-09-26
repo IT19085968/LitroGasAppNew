@@ -54,6 +54,10 @@ public class MainActivity extends AppCompatActivity {
     public void sendMessage(View view) {
         Intent intent = new Intent(this, Signup.class);
         startActivity(intent);
+    }
 
+    public void sendMessage2(View view) {
+        Intent intent = new Intent(this, ResetPassword.class);
+        startActivity(intent);
     }
 }
