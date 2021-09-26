@@ -170,7 +170,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/register"
         android:layout_marginLeft="105dp"
-        android:layout_marginTop="85dp"
+        android:layout_marginTop="65dp"
         android:layout_marginRight="45dp"
         android:text="Already have an account?"
         android:textColor="#ffffff"
@@ -187,7 +187,7 @@
         android:padding="10dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="105dp"
         />
 
 </RelativeLayout>
