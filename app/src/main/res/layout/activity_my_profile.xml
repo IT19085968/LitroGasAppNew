@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyProfile"
+    android:background="#EEEEEE">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="-180dp"
+        android:layout_marginRight="130dp"
+        android:src="@drawable/profile_pic" />
+
+    <TextView
+        android:id="@+id/name_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="180dp"
+        android:text="Rachel Legrand"
+        android:textColor="#000066"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/phone_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_textview"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:text="0778965412"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+
+        />
+
+    <TextView
+        android:id="@+id/email-profile_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_textview"
+        android:layout_marginLeft="130dp"
+        android:text="rachel@gmail.com"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:id="@+id/selected_address_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_textview"
+        android:layout_marginLeft="130dp"
+        android:text="Selected Address"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:id="@+id/address_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selected_address_textview"
+        android:layout_marginLeft="90dp"
+        android:text=" 345/G, Main Rd, Colombo 10."
+        android:textColor="#2B65EC"
+        android:textSize="18dp"
+        />
+
+    <Button
+        android:id="@+id/editBtn"
+        android:layout_width="370dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="230dp"
+        android:layout_marginBottom="46dp"
+        android:layout_below="@+id/address_textview"
+        android:background="#2B65EC"
+        android:text="Edit profile"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="370dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="230dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="46dp"
+        android:layout_below="@+id/address_textview"
+        android:background="#FF0F00"
+        android:text="delete account"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/feedbackBtn"
+        android:layout_width="370dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="470dp"
+        android:background="#FFFFFF"
+        android:text="Feedback"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/hotlineBtn"
+        android:layout_width="370dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="520dp"
+        android:background="#FFFFFF"
+        android:text="hot line : 1311"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="370dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="570dp"
+        android:background="#FFFFFF"
+        android:text="logout"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>
