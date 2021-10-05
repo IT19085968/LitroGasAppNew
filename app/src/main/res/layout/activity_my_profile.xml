@@ -47,7 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/phone_textview"
         android:layout_marginLeft="130dp"
-        android:text="rachel@gmail.com"
+        android:text="rachel123@gmail.com"
         android:textColor="@android:color/black"
         android:textSize="18dp"
         />
@@ -85,6 +85,7 @@
         android:layout_marginBottom="46dp"
         android:layout_below="@+id/address_textview"
         android:background="#2B65EC"
+        android:onClick="sendMessage3"
         android:text="Edit profile"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
