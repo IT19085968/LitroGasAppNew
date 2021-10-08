@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PreviousOrders"
+    android:background="#EEEEEE">
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/cylinder1"/>
+
+        <TextView
+            android:id="@+id/date_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DATE"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="15/08/21"
+            android:layout_marginLeft="240dp"
+           android:textColor="@android:color/black"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+            android:textSize="17dp"/>
+
+
+
+
+
+        <TextView
+            android:id="@+id/orderId_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date_textview"
+            android:text="ORDER ID"
+            android:layout_marginLeft="140dp"
+            android:textStyle="bold"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:id="@+id/orderId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="456987"
+            android:layout_marginLeft="240dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/date"
+            android:textSize="17dp"/>
+
+
+
+
+        <TextView
+            android:id="@+id/dealer_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderId_textview"
+            android:text="DEALER"
+            android:layout_marginLeft="140dp"
+            android:textStyle="bold"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:id="@+id/dealer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="JOY GAS CENTER"
+            android:layout_marginLeft="240dp"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/orderId"
+            android:textStyle="bold"
+            android:textSize="17dp"/>
+
+
+
+
+        <TextView
+            android:id="@+id/total_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dealer_textview"
+            android:text="TOTAL"
+            android:layout_marginLeft="140dp"
+            android:textStyle="bold"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rs. 1493.00"
+            android:layout_marginLeft="240dp"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/dealer"
+            android:textStyle="bold"
+            android:textSize="17dp"/>
+
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editAddress_textView"
+            android:layout_marginTop="202dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/ic_baseline_location_on_24"/>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="345/G, Main Rd, Colombo 10."
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="60dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/total"
+            android:textSize="20dp"/>
+
+
+        <TextView
+            android:id="@+id/gas1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12.5 kg Litro Regular Refill      1QTY"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#2B65EC"
+            android:textStyle="bold"
+            android:layout_below="@+id/address"
+            android:textSize="20dp"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="340dp"
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/cylinder2"/>
+
+        <TextView
+            android:id="@+id/date2_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DATE"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:id="@+id/date2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="07/04/21"
+            android:layout_marginLeft="240dp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+            android:textSize="17dp"/>
+
+
+
+
+
+        <TextView
+            android:id="@+id/orderId2_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date2_textview"
+            android:text="ORDER ID"
+            android:layout_marginLeft="140dp"
+            android:textStyle="bold"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:id="@+id/orderId2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="252398"
+            android:layout_marginLeft="240dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/date2"
+            android:textSize="17dp"/>
+
+
+
+
+        <TextView
+            android:id="@+id/dealer2_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderId2_textview"
+            android:text="DEALER"
+            android:layout_marginLeft="140dp"
+            android:textStyle="bold"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:id="@+id/dealer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="JAYASIRI STORES"
+            android:layout_marginLeft="240dp"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/orderId2"
+            android:textStyle="bold"
+            android:textSize="17dp"/>
+
+
+
+
+        <TextView
+            android:id="@+id/total2_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dealer2_textview"
+            android:text="TOTAL"
+            android:layout_marginLeft="140dp"
+            android:textStyle="bold"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:id="@+id/total2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rs. 689.00"
+            android:layout_marginLeft="240dp"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/dealer2"
+            android:textStyle="bold"
+            android:textSize="17dp"/>
+
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editAddress_textView"
+            android:layout_marginTop="202dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/ic_baseline_location_on_24"/>
+
+        <TextView
+            android:id="@+id/address2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="345/G, Main Rd, Colombo 10."
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="60dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/total2"
+            android:textSize="20dp"/>
+
+
+        <TextView
+            android:id="@+id/gas2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5 kg Litro Budget Refill            1QTY"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#2B65EC"
+            android:textStyle="bold"
+            android:layout_below="@+id/address2"
+            android:textSize="20dp"/>
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
