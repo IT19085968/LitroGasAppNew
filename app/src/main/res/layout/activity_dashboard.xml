@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,7 +11,7 @@
         android:id="@+id/editTextTextMultiLine3"
         android:layout_width="162dp"
         android:layout_height="67dp"
-        android:layout_marginStart="52dp"
+        android:layout_marginStart="178dp"
         android:layout_marginTop="484dp"
         android:background="@drawable/my_border"
         android:ems="10"
@@ -27,6 +27,7 @@
         android:layout_width="362dp"
         android:layout_height="40dp"
         android:layout_marginTop="60dp"
+       android:layout_marginLeft="25dp"
         android:background="@drawable/my_border"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.483"
@@ -38,7 +39,7 @@
         android:layout_width="66dp"
         android:layout_height="121dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="116dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchView"
         app:srcCompat="@drawable/cylinder" />
@@ -67,8 +68,8 @@
         android:id="@+id/editTextTextMultiLine"
         android:layout_width="162dp"
         android:layout_height="67dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginStart="178dp"
+        android:layout_marginTop="140dp"
         android:background="@drawable/my_border"
         android:ems="10"
         android:gravity="start|top"
@@ -82,7 +83,7 @@
         android:id="@+id/editTextTextMultiLine2"
         android:layout_width="162dp"
         android:layout_height="67dp"
-        android:layout_marginStart="48dp"
+        android:layout_marginStart="178dp"
         android:layout_marginTop="296dp"
         android:background="@drawable/my_border"
         android:ems="10"
@@ -93,45 +94,85 @@
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/searchView" />
 
-    <FrameLayout
+<!--    <FrameLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_above="@+id/bottom_home_navigation"-->
+<!--        android:layout_marginTop="650dp"-->
+
+<!--        >-->
+
+<!--        -->
+<!--    </FrameLayout>-->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schema.android.com/apk/res/res-auto"
+        android:id="@+id/navigation"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/bottom_home_navigation"
-        android:layout_marginTop="650dp"
+        android:layout_height="63dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="627dp"
+        android:background="#FFFFFF"
+        tools:ignore="MissingConstraints">
 
-        >
+        <ImageView
+            android:id="@+id/homeIcon"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/home"/>
 
-        <ImageButton
-            android:id="@+id/bottom_home_navigation"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="20dp"
-            android:src="@drawable/ic_baseline_home_24"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="53dp"
-            tools:layout_editor_absoluteY="583dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Litro Gas"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="25dp"
+            android:textColor="#000066"
+            android:textStyle="bold"
+            />
 
-<!--        <ImageButton-->
-<!--            android:id="@+id/bottom_gas_navigation"-->
-<!--            android:layout_width="50dp"-->
-<!--            android:layout_height="50dp"-->
-<!--            android:layout_marginLeft="150dp"-->
-<!--            android:src="@drawable/gas_icon"-->
-<!--            tools:ignore="MissingConstraints"-->
-<!--            tools:layout_editor_absoluteX="53dp"-->
-<!--            tools:layout_editor_absoluteY="583dp" />-->
 
-        <ImageButton
-            android:id="@+id/bottom_profile_navigation"
+        <ImageView
+            android:id="@+id/gasIcon"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="180dp"
+            android:onClick="sendMessageToOrders"
+            android:background="@drawable/gas_icon"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Orders"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="186dp"
+            android:textColor="#808080"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="40dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="330dp"
             android:onClick="sendMessageToProfile"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="340dp"
-            android:src="@drawable/ic_baseline_person_24"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="53dp"
-            tools:layout_editor_absoluteY="583dp" />
+            android:background="@drawable/avatar"/>
 
-    </FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="330dp"
+            android:textColor="#808080"
+            android:textStyle="bold"
+            />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

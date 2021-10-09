@@ -143,4 +143,74 @@
         android:text="logout"
         android:textColor="@android:color/black" />
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schema.android.com/apk/res/res-auto"
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="627dp"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/homeIcon"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:onClick="profileToHome"
+            android:background="@drawable/home"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Litro Gas"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="25dp"
+            android:textColor="#808080"
+            android:textStyle="bold"
+            />
+
+
+        <ImageView
+            android:id="@+id/gasIcon"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="180dp"
+            android:onClick="profileToOrders"
+            android:background="@drawable/gas_icon"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Orders"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="186dp"
+            android:textColor="#808080"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="40dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="330dp"
+            android:background="@drawable/avatar"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="330dp"
+            android:textColor="#000066"
+            android:textStyle="bold"
+            />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
 </RelativeLayout>

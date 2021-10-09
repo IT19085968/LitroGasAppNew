@@ -183,6 +183,7 @@
         android:layout_below="@id/register"
         android:background="@drawable/bottom_buttons"
         android:text="Login Now"
+        android:onClick="sendMessage4"
         android:textColor="#FFFFFF"
         android:padding="10dp"
         android:layout_marginLeft="15dp"
