@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         etPassword = findViewById(R.id.etPassword);
 
         DBHelper dbHelper = new DBHelper(this);
-        long val = dbHelper.addInfo("admin123a@gmail.com","admin123a");
+        long val = dbHelper.addInfo("admin123ab@gmail.com","admin123ab");
 
     }
 
