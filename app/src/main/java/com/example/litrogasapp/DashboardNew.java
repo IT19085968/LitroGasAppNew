@@ -38,12 +38,12 @@ public class DashboardNew extends AppCompatActivity implements itemAdapter.itemC
     }
 
     public void setData() {
-        itemModelList.add(new ItemModel("12kg","500","1","Available"));
-        itemModelList.add(new ItemModel("3kg","200","1","Not Available"));
-        itemModelList.add(new ItemModel("6kg","700","1","Available"));
-        itemModelList.add(new ItemModel("1kg","50","1","Available"));
-        itemModelList.add(new ItemModel("3kg refill","200","1","Not Available"));
-        itemModelList.add(new ItemModel("5kg","500","1","Available"));
+        itemModelList.add(new ItemModel("12kg","Rs.500","1","Available"));
+        itemModelList.add(new ItemModel("3kg","Rs.200","1","Not Available"));
+        itemModelList.add(new ItemModel("6kg","Rs.700","1","Available"));
+        itemModelList.add(new ItemModel("1kg","Rs.50","1","Available"));
+        itemModelList.add(new ItemModel("3kg refill","Rs.200","1","Not Available"));
+        itemModelList.add(new ItemModel("5kg","Rs.500","1","Available"));
     }
 
     public void prepareRecyclerView(){

@@ -12,6 +12,7 @@ public class SelectedItemActivity extends AppCompatActivity {
 
     TextView rselectedItemName;
     TextView rselectedItemPrice;
+    TextView rselectedItemAvailability;
     ItemModel itemModel;
     Intent intent;
 
@@ -23,6 +24,7 @@ public class SelectedItemActivity extends AppCompatActivity {
         setContentView(R.layout.activity_selected_item);
         rselectedItemName = findViewById(R.id.rselectedItemName);
         rselectedItemPrice = findViewById(R.id.rselectedItemPrice);
+        rselectedItemAvailability = findViewById(R.id.rselectedAvailability);
 
         intent = getIntent();
 
@@ -30,8 +32,10 @@ public class SelectedItemActivity extends AppCompatActivity {
             itemModel = (ItemModel) intent.getSerializableExtra("data");
             String itemName = itemModel.getTitle();
             String itemP = itemModel.getPrice();
+            String itemA = itemModel.getAvailability();
             rselectedItemName.setText(itemName);
             rselectedItemPrice.setText(itemP);
+            rselectedItemAvailability.setText(itemA);
         }
 
         homeIcon = findViewById(R.id.homeIcon);
