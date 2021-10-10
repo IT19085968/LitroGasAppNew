@@ -9,11 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PreviousOrders"></activity>
-        <activity android:name=".EditProfile" />
-        <activity android:name=".MyProfile" />
-        <activity android:name=".ResetPassword" />
-        <activity android:name=".Signup" />
+<!--        <activity android:name=".PreviousOrders"></activity>-->
+<!--        <activity android:name=".EditProfile" />-->
+<!--        <activity android:name=".MyProfile" />-->
+
+
         <activity
             android:name=".Dashboard"
             android:parentActivityName=".AddAddress">
@@ -21,12 +21,53 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".AddAddress" />
         </activity>
+
         <activity
-            android:name=".AddAddress"
+            android:name=".EditProfile"
+            android:parentActivityName=".MyProfile">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MyProfile" />
+        </activity>
+
+        <activity
+            android:name=".MyProfile"
+            android:parentActivityName=".Dashboard">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Dashboard" />
+        </activity>
+
+        <activity
+            android:name=".PreviousOrders"
+            android:parentActivityName=".Dashboard">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Dashboard" />
+        </activity>
+
+        <activity
+            android:name=".ResetPassword"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".Signup"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".AddAddress"
+            android:parentActivityName=".Signup">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Signup" />
         </activity> <!-- <meta-data -->
         <!-- android:name="com.google.android.actions" /> -->
         <activity android:name=".MainActivity">
