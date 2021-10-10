@@ -11,6 +11,7 @@ import android.widget.TextView;
 public class SelectedItemActivity extends AppCompatActivity {
 
     TextView rselectedItemName;
+    TextView rselectedItemPrice;
     ItemModel itemModel;
     Intent intent;
 
@@ -21,14 +22,16 @@ public class SelectedItemActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_selected_item);
         rselectedItemName = findViewById(R.id.rselectedItemName);
+        rselectedItemPrice = findViewById(R.id.rselectedItemPrice);
 
         intent = getIntent();
 
         if(intent != null){
             itemModel = (ItemModel) intent.getSerializableExtra("data");
-            String itemName = itemModel.getTitle() + " " +itemModel.getQuantity();
-            String itemQ = itemModel.getPrice() + " " + itemModel.getAvailability();
+            String itemName = itemModel.getTitle();
+            String itemP = itemModel.getPrice();
             rselectedItemName.setText(itemName);
+            rselectedItemPrice.setText(itemP);
         }
 
         homeIcon = findViewById(R.id.homeIcon);

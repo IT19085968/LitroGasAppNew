@@ -83,9 +83,9 @@ public class itemAdapter extends RecyclerView.Adapter<itemAdapter.itemAdapterVh>
         String itemQ = itemModel.getQuantity();
         String itemP = itemModel.getPrice();
         String itemA = itemModel.getAvailability();
-        String itemRowOne = itemTitle + " " + itemQ;
+        String itemRowOne = itemTitle;
         String itemRowTwo = itemP + " " + itemA;
-        String prefix1 = itemTitle.charAt(0)+""+itemQ.charAt(0);
+        String prefix1 = itemTitle.charAt(0)+""+itemTitle.charAt(1);
         String prefix2 = itemP.charAt(0)+""+itemA.charAt(0);
 
         holder.itemName.setText(itemRowOne);
